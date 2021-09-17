@@ -25,7 +25,7 @@ namespace ImageResize.Services
                     PartitionKey = DateTimeOffset.Now.Date.ToLongDateString(),
                     RowKey = imageName,
                     ImageName = imageName,
-                    Message = "Create a thumb from image",
+                    Message = "Created a thumb from the image",
                     Timestamp = DateTimeOffset.Now
                 };
                 var response = await _table.AddEntityAsync(entity);
